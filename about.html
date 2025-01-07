@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behind the Camera</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5ede3;
+            color: #4B4B4B;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #44576d;
+            color: white;
+            padding: 100px;
+            background-image: url('https://www.hindustantimes.com/ht-img/img/2023/08/17/1600x900/dariusz-sankowski-mj2NwYH3wBA-unsplash_1692275608596_1692275643899.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.7em;
+            font-family: 'Times New Roman', serif;
+            font-weight: bold;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        nav {
+            background-color: #987654;
+            padding: 7px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #e3dac9;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+
+        nav ul li a::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background: #e3dac9;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        nav ul li a:active {
+            color: #ffcc00;
+            transition: color 0.2s ease;
+        }
+
+        nav ul li a:active::after {
+            background: #ffcc00;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin: 60px auto; 
+            justify-content: center;
+            align-items: flex-start;
+            max-width: 1000px;
+            padding: 20px; 
+        }
+
+        .image-container {
+            flex: 1;
+            min-width: 200px;
+            max-width: 250px;
+            text-align: center;
+            background-color: #fff;
+            border: 2px solid #4B4B4B;
+            padding: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .image-container em {
+            display: block;
+            margin-top: 10px;
+            font-style: italic;
+            color: #4B4B4B;
+            background-color: #f5ede3;  
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .text {
+            flex: 2;
+            padding: 20px;
+            font-size: 1em;
+            text-align: justify;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin: auto;
+            max-width: 600px;
+        }
+
+        .text h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            font-family: 'Georgia', serif;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #987654;
+            color: white;
+            text-align: center;
+            padding: 1px;
+        }
+
+        footer a {
+            color: #4B4B4B;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .image-container {
+                max-width: 100%;
+            }
+
+            .text {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>- Behind the Camera -</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="https://i.imghippo.com/files/PkQ2555Yw.jpeg" alt="Image of Maja">
+            <em class="maja-text">I often go by "Maja"!</em>
+        </div>
+        <div class="text">
+            <h2>About Me</h2>
+            <p>Hi, I’m Majadeah E. Abdullah, a passionate photographer with a deep love for capturing the stories that surround us. With the help of photography, I explore the beauty in the ordinary and the magic in fleeting moments.</p>
+            <p>Photography isn’t just about taking pictures for me; it’s about immortalizing emotions, perspectives, and experiences. I aim to create images that speak to the heart and soul. Being able to capture every moment brings me peace and happiness. Even small events that happen are very important for me to capture, as it’s a way of preserving different experiences. I transform moments into timeless memories. From a candid smile to a spectacular view, every photograph is a reflection of life’s raw beauty.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p><a href="https://www.facebook.com/majaaaaaaaadeahhhhhhh">Facebook</a> | <a href="https://github.com/deiverse">GitHub</a></p>
+        <p>Contact us: +63 935 984 7855 | abdullahmaja13@gmail.com</p>
+    </footer>
+
+</body>
+</html>

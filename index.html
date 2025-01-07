@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#efdecd;   
+            color: #4B4B4B;   
+        }
+
+        header {
+            background-color: #44576d;   
+            color: white;
+            padding: 100px;
+            background-image: url('https://www.hindustantimes.com/ht-img/img/2023/08/17/1600x900/dariusz-sankowski-mj2NwYH3wBA-unsplash_1692275608596_1692275643899.jpg'); 
+            background-size: cover;
+            background-position: center;  
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.7em;   
+            font-family: 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: #987654;   
+            padding: 7px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #e3dac9;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+
+        nav ul li a::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background: #e3dac9;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        nav ul li a:active {
+            color: #ffcc00;  
+            transition: color 0.2s ease;
+        }
+
+        nav ul li a:active::after {
+            background: #ffcc00;  
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            margin: 20px;
+        }
+
+        .content {
+            width: 100%;
+            max-width: 600px;
+            padding: 15px;
+            box-sizing: border-box;
+            margin: 0 20px;
+        }
+
+        .content h2 {
+            font-size: 2em;   
+            font-family: 'Georgia', serif;
+            margin-bottom: 20px;
+            text-align: left;   
+        }
+
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: justify;   
+        }
+
+        .image-container {
+            width: 100%;
+            max-width: 600px;
+            padding: 15px;
+            box-sizing: border-box;
+            margin: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            background-color: #987654;  
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 30px;  
+        }
+
+        .button-container button:hover {
+            background-color: #92786d;  
+        }
+
+        .footer {
+            background-color: #987654;  
+            color: white;
+            text-align: center;
+            padding: 1px; 
+            margin-top: 40px;
+        }
+
+        .footer a {
+            color: #4B4B4B;  
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;  
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;  
+            }
+
+            .content, .image-container {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            header h1 {
+                font-size: 20px;  
+            }
+
+            .content h2 {
+                font-size: 2em;  
+            }
+
+            .button-container button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>“The lens doesn’t just capture light; it captures life.”</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="content">
+            <h2><em>Welcome to a space where moments are more than just memories.</em></h2>
+            <p>Through the lens, we capture the emotions and stories that make life unique—simple, authentic, and beautiful. Whether it’s a quiet smile or a stunning scene, each photograph tells its own story, preserving the essence of time in a way words cannot.</p>
+            <p><i>"Every click is a new chapter in the story of time."</i></p>
+            <div class="button-container">
+                <button onclick="location.href='gallery.html'">Explore More</button> 
+            </div>
+        </section>
+
+        <div class="image-container">
+            <img src="https://i.imghippo.com/files/Gz5614FE.jpeg" alt="" border="0">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p><a href="https://www.facebook.com/majaaaaaaaadeahhhhhhh">Facebook</a> | <a href="https://github.com/deiverse">GitHub</a></p>
+        <p>Call us at: 0935 984 7855 | Email: abdullahmaja13@gmail.com</p>
+    </footer>
+
+</body>
+</html>
